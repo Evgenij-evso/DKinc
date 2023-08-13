@@ -9,29 +9,96 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="player.css">
     <title>Dk.inc</title>
 </head>
 <body>
     <header>
-        <img src="img/logo.png" alt="" class="img__header_logo">
+        <img src="img/logo.png" alt="" class="img__header_logo anime_item_menu">
         <ul id="navbar">
-            <li class="menu_item"><a class="menu_link" href="#">Мерч</a></li>
-            <li class="menu_item"><a class="menu_link" href="#">Клипы</a></li>
-            <li class="menu_item"><a class="menu_link" href="#">Видио</a></li>
-            <li class="menu_item"><a class="menu_link" href="#">Топ чач</a></li>
+            <li class="menu_item anime_item_menu"><a class="menu_link" href="#">Мерч</a></li>
+            <li class="menu_item anime_item_menu"><a class="menu_link" href="#">Клипы</a></li>
+            <li class="menu_item anime_item_menu"><a class="menu_link" href="#">Видио</a></li>
+            <li class="menu_item anime_item_menu"><a class="menu_link" href="#">Топ чач</a></li>
         </ul>
     </header>
     <section class="activities">
-        <div class="style_activities nenaxod_ac"></div>
         <div class="style_activities synonim_ac"></div>
+        <div class="style_activities nenaxod_ac"></div>
         <div class="style_activities TSandS_ac"></div>
         <div class="style_activities other_ac"></div>
     </section>
     
     <section class="Twitch_player">
+        <h1 class="text_window_in_dk">Окошко в мир DK</h1>
         <div id="twitch-embed"></div>
     </section>
+
+    <div id="app-cover">
+        <div id="player">
+          <div id="player-track">
+            <div id="album-name"></div>
+            <div id="track-name"></div>
+            <div id="track-time">
+              <div id="current-time"></div>
+              <div id="track-length"></div>
+            </div>
+            <div id="s-area">
+              <div id="ins-time"></div>
+              <div id="s-hover"></div>
+              <div id="seek-bar"></div>
+            </div>
+          </div>
+          <div id="player-content">
+            <div id="album-art">
+              <img src="img/synonim_logo_1x1.jpg" class="active" id="_1">
+              <img src="img/synonim_logo_1x1.jpg" class="active" id="_2">
+              <img src="img/synonim_logo_1x1.jpg" class="active" id="_3">
+              <img src="img/synonim_logo_1x1.jpg" class="active" id="_4">
+              <img src="img/synonim_logo_1x1.jpg" class="active" id="_5">
+              <img src="img/synonim_logo_1x1.jpg" class="active" id="_6">
+              <img src="img/synonim_logo_1x1.jpg" class="active" id="_7">
+              <img src="img/synonim_logo_1x1.jpg" class="active" id="_8">
+              <img src="img/synonim_logo_1x1.jpg" class="active" id="_9">
+              <img src="img/synonim_logo_1x1.jpg" class="active" id="_10">
+              <img src="img/nenaxod_logo_1x1.jpg" class="active" id="_11">
+              <img src="img/nenaxod_logo_1x1.jpg" class="active" id="_12">
+              <img src="img/nenaxod_logo_1x1.jpg" class="active" id="_13">
+              <img src="img/nenaxod_logo_1x1.jpg" class="active" id="_14">
+              <img src="img/nenaxod_logo_1x1.jpg" class="active" id="_15">
+              <img src="img/nenaxod_logo_1x1.jpg" class="active" id="_16">
+              <img src="img/nenaxod_logo_1x1.jpg" class="active" id="_17">
+              <img src="img/nenaxod_logo_1x1.jpg" class="active" id="_18">
+              <img src="img/36and6_logo_1x1.jpg" class="active" id="_19">
+              <img src="img/36and6_logo_1x1.jpg" class="active" id="_20">
+              <img src="img/36and6_logo_1x1.jpg" class="active" id="_21">
+              <img src="img/36and6_logo_1x1.jpg" class="active" id="_22">
+              <img src="img/36and6_logo_1x1.jpg" class="active" id="_23">
+              <img src="img/36and6_logo_1x1.jpg" class="active" id="_24">
+              <div id="buffer-box">Buffering ...</div>
+            </div>
+            <div id="player-controls">
+              <div class="control">
+                <div class="button" id="play-previous">
+                  <i class="fas fa-backward"></i>
+                </div>
+              </div>
+              <div class="control">
+                <div class="button" id="play-pause-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="control">
+                <div class="button" id="play-next">
+                  <i class="fas fa-forward"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Load the Twitch embed JavaScript file -->
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
@@ -47,7 +114,12 @@
         parent: ["github.io"]
       });
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="anime.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+    <script src="player.js"></script>
 </body>
 </html>

@@ -1,9 +1,12 @@
-
+:root{
+    --slider-bar: 0%;
+}
 *{
     font-family: 'Handjet', cursive;
 
     margin: 0;
     box-sizing: border-box;
+    
 }
 body{
     
@@ -29,6 +32,9 @@ header{
     border-radius: 100px;
     
 } */
+section{
+    opacity: 0;
+}
 .img__header_logo{
     height: 80%;
     margin-left: 10px;
@@ -46,17 +52,17 @@ header{
 .menu_item{
     list-style: none;
     padding: 0 5px;
-
+    
+}
+.anime_item_menu{
+    opacity: 0;
 }
 .menu_link{
-    
     text-decoration: none;
     color: rgb(60, 60, 60);
     font-size: 1.6em;
 
-    /* border-image-slice: 1;
-    border-bottom: 1px solid;
-    border-image-source: linear-gradient(to left, #cf3ad4 100%, transparent 100%); */
+    padding: 2px 7px;
 }
 section.activities{
     width: 100vw;
@@ -78,8 +84,10 @@ section.activities{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
     margin: 0 10px;
+    opacity: 0;
 }
 .nenaxod_ac{
     background: url(img/nenaxod_logo.png);
@@ -113,6 +121,15 @@ section.activities{
     margin-left: 40%;
 }
 .Twitch_player{
+    width: 100vw;
+    padding: 1% 1.5%;
+
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_window_in_dk{
+    color: rgb(255, 255, 255);
+    font-size: 3em;
 }
