@@ -4,22 +4,6 @@ let ac = document.querySelectorAll('.style_activities');
 let previes_text = document.querySelector('.previes_text')
 let span_previews_text = document.querySelector('.span_previews_text');
 
-anime({
-    targets: '.style_activities',
-    opacity: 1,
-    delay: anime.stagger(200, {start: 200})
-})
-anime({
-    targets: '.anime_item_menu',
-    opacity: 1,
-    delay: anime.stagger(200, {start: 200})
-})
-anime({
-    targets: 'section',
-    opacity: 1,
-    delay: anime.stagger(100, {start: 0})
-})
-
 for(let i = 0; menu_link.length > i; i++){
     $(menu_link[i]).mouseenter(function(){
         
