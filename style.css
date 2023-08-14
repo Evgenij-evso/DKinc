@@ -133,3 +133,24 @@ section.activities{
     color: rgb(255, 255, 255);
     font-size: 3em;
 }
+
+.previes_text{
+    position: fixed;
+    padding: 20px 40px;
+    max-width: 500px;
+    top: auto;
+    bottom: 10px;
+    left: auto;
+    right: 10px;
+
+    background-color: rgb(25, 25, 25);
+    border: 1px solid #cf3ad4;
+    border-radius: 15px;
+    border-top-right-radius: 5px;
+
+    display: none;
+}
+.span_previews_text{
+    color: #ffffff;
+    font-size: 1.3em;
+}

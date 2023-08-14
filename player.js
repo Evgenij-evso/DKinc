@@ -305,5 +305,4 @@ $(function () {
   
     initPlayer();
   });
-  
-  
+
