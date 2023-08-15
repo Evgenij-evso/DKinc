@@ -28,12 +28,16 @@ body{
     z-index: 9999;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     opacity: 1;
 
     overflow: hidden;
+}
+.T2x2{
+    color: hsl(0,0%,60%);
 }
 
 .wheel-and-hamster {
@@ -361,21 +365,93 @@ section{
 
     padding: 2px 7px;
 }
+section{
+    padding: 1% 1.5%;
+    border-bottom: 1px solid rgb(25, 25, 25);
+}
 section.activities{
     width: 100vw;
     height: 200px;
 
-    padding: 1% 1.5%;
-    border-bottom: 1px solid rgb(25, 25, 25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.merch{
+    width: 100vw;
+    height: 500px;
 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+section.Twitch_rights{
+  width: 100vw;
 
+  display: flex;
+  justify-content: center;
+}
+.all_card_merch{
+    height: 100%;
+    width: 100%;
 
+    display: flex;
+    align-items: center;
+
+    overflow-x: auto;
+}
+.card_merch{
+    min-width: 325px;
+    height: 400px;
+
+    background-color: rgb(25, 25, 25);
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #cf3ad400;
+    
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 10px;
+}
+.card_product_img{
+    height: 100%;
+}
+.card_up_container{
+    height: 80%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_down_container{
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: auto;
+    margin-bottom: 0;
+}
+.name_merch{
+    font-size: 1.6em;
+    color: rgb(100, 100, 100);
+}
+.price_merch{
+    font-size: 1.6em;
+    color: rgb(0, 176, 0);
+}
 .style_activities{
     width: 300px;
-    height: 100%;
+    height: 165px;
     border-radius: 10px;
     background-color: rgb(60, 60, 60);
 
@@ -453,3 +529,91 @@ section.activities{
     font-size: 1.3em;
 }
 
+a{
+  text-decoration: none;
+  width: auto;
+  height: auto;
+}
+.card_merch_a{
+  height: 100%;
+  width: 100%;
+}
+footer{
+  width: 100vw;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  background-color: rgb(25, 25, 25);
+
+  padding: 0% 1.5%;
+}
+.rights{
+  color: rgb(100, 100, 100);
+}
+.social_messanger{
+  height: 50%;
+}
+.a_social_messanger{
+  height: 100%;
+  
+  display: flex;
+  align-items: center;
+  
+  margin: 0 10px;
+}
+.messanger_container{
+  margin-left: auto; margin-right: 0;
+  height: 100%;
+  width: auto;
+
+  display: flex;
+  align-items: center;
+}
+.card_twitch{
+  width: 450px;
+  height: 520px;
+
+  margin: 0 10px;
+  padding: 20px;
+  border-radius: 15px;
+
+  background-color: rgb(25, 25, 25);
+  
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.twitch_previews_text{
+  font-size: 2em;
+  color: rgb(150, 150, 150);
+}
+.twitch_rules_container{
+  width: 100%;
+  height: auto;
+
+  padding: 10px;
+  margin: 10px 0;
+
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+  border: 1px solid #cf3ad4;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.twitch_rules_name{
+  font-size: 1.5em;
+  color: rgb(150, 150, 150);
+}
+.twitch_rules_text{
+  font-size: 1.1em;
+  color: rgb(125, 125, 125);
+
+  text-align: center;
+}
+.anime_twitch{
+  border: 1px solid;
+}
