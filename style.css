@@ -617,3 +617,39 @@ footer{
 .anime_twitch{
   border: 1px solid;
 }
+@media(max-width:1000px){
+  section.activities{
+    height: 150px;
+  }
+  .style_activities{
+    height: 100%;
+  }
+
+}
+@media(max-width:862px){
+  section.activities{
+    height: 125px;
+  }
+}
+@media(max-width:490px){
+  section.activities{
+    display: none;
+  }
+  .scale_media{
+    scale: 0.55;
+  }
+  .Twitch_player{
+    height: 500px;
+  }
+  .rights{
+    font-size: 0.9em;
+  }
+}
+@media(max-width:422px){
+  .rights{
+    font-size: 0.7em;
+  }
+  .scale_media{
+    scale: 0.45;
+  }
+}
